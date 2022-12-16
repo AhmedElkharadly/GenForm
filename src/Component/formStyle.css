@@ -1,0 +1,84 @@
+.formContainer {
+    margin: auto;
+    padding: 20px;
+    width: 80vw;
+    height: 500px;
+    display: grid;
+    justify-items: center;
+    /* align-content: center; */
+    align-items: flex-start;
+    grid-template-columns: 1.8fr 1.8fr 1.8fr 1.8fr;
+    background-color: rgba(0, 18, 36, 0.918);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.inpt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+
+.lables {
+    transition: 0.5s;
+    border-radius: 5px;
+    letter-spacing: .5px;
+}
+
+.lables:hover {
+    color: rgba(0, 125, 163, 0.932);
+}
+
+.emailLike {
+    /* width: 280px; */
+    height: 30px;
+    padding: 0 5px;
+    min-width: 200px;
+    /* max-width: 380px; */
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    border: 1.5px solid white;
+    color: antiquewhite;
+    background-color: transparent;
+}
+
+.emailLike:focus {
+    border: 1.5px solid rgb(0, 183, 255);
+    transition: 0.3s ease-in-out;
+    outline: none;
+}
+
+@media screen and (max-width: 1100px) {
+    
+    .formContainer {
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+}
+@media screen and (max-width: 877px) {
+    
+    .formContainer {
+        grid-template-columns: 4.5fr 4.5fr;
+    }
+}
+@media screen and (max-width: 580px) {
+    
+    .formContainer {
+        grid-template-columns:  8fr;
+    }
+}
+    
+    ::-webkit-scrollbar {
+        width: 1.09vw;
+      }
+      ::-webkit-scrollbar-track {
+        background-color:rgba(0, 18, 36, 0);
+      }
+      ::-webkit-scrollbar-thumb {
+          border-radius: 9.5px;
+        background-color: rgba(114, 114, 114, 0.966);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+          background-color: rgba(0, 0, 0, 0.822);
+      }
+      
