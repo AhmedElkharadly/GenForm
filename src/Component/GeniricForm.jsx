@@ -1,12 +1,12 @@
 import React from "react";
-import { formProps } from "./formProps";
 import "./formStyle.css";
-// Replacing npt by Props
-const GeniricForm = (props) => {
-  return (<>
-    <h1 style={{marginBottom:"0"}}>Form Name</h1>
-    <div className="formContainer">
-      {formProps?.map((npt) => {
+
+function GeniricForm(props) {
+  return (
+    <div >
+    <h1 style={{color:"", marginBottom: "0" }}>Form Name</h1>
+      <div className="formContainer">
+      {props.formProps?.map((npt) => {
         return (
           <div key={npt.id} className="inpt">
             <label className={npt.lableStyle} htmlFor={npt.id}>
@@ -17,13 +17,13 @@ const GeniricForm = (props) => {
               type={npt.type}
               placeholder={npt.placeholder}
               className={npt.inputStyle}
-              style={npt.style}
-            />
+              style={npt.style} />
           </div>
         );
       })}
+      </div>
     </div>
-    </>);
-};
+  );
+}
 
 export default GeniricForm;
